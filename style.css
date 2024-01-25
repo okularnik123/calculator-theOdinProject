@@ -1,0 +1,26 @@
+#container {
+  background-color: rgba(116, 94, 1, 0.671);
+  width: 60vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#screen {
+  height: 100px;
+  background-color: black;
+}
+.columnDiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  flex: 1;
+}
+.button {
+  background-color: rgb(0, 204, 68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  flex: 1;
+}
