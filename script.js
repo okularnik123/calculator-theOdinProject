@@ -6,4 +6,23 @@ const addButton = document.querySelector("#addbtn");
 const substractButton = document.querySelector("#subtractbtn");
 const equalsButton = document.querySelector("#equalsbtn");
 
-clearButton.addEventListener(() => {});
+const screen = document.querySelector("#screen");
+
+const numberButtons = document.querySelectorAll(".numberbtn");
+
+let firstNumber = "";
+let operator;
+let secoundNumber = "";
+
+for (const numberButton of numberButtons) {
+  numberButton.addEventListener("click", (e) => {
+    if (typeof firstNumber === "string") {
+      firstNumber += e.target.innerText;
+      addNumberToScreen();
+    }
+  });
+}
+
+function addNumberToScreen() {
+  screen.innerText = firstNumber;
+}
