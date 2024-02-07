@@ -71,4 +71,8 @@ body {
   #screen {
     flex-grow: 1;
   }
+  #container {
+    width: 95%;
+    height: 80%;
+  }
 }
